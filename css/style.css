@@ -66,10 +66,10 @@ body {
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background: url(../img/check.png) 0 0 no-repeat;
+	background: url(/img/check.png) 0 0 no-repeat;
 }
 .spisok li:hover::before {
-	background: url(../img/krest.jpg) 0 0 no-repeat;
+	background: url(/img/krest.jpg) 0 0 no-repeat;
 }
 .spisok li:hover {
 	color: red;
