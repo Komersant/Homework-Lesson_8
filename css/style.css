@@ -1,0 +1,159 @@
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	font-size: 20px;
+	background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 0, 255, 1) 100%);
+	font-family: Reggae One;
+	line-height: 1.5;
+}
+.spisok {
+	margin: 20px;
+	max-width: 800px;
+	margin: 20px auto 50px;
+}
+.spisok li:hover:first-child {
+	background: linear-gradient(
+		45deg,
+		rgba(255, 0, 0, 1) 0%,
+		rgba(255, 255, 0, 1) 25%,
+		rgba(5, 193, 255, 1) 50%,
+		rgba(255, 255, 0, 1) 75%,
+		rgba(255, 0, 0, 1) 100%
+	);
+}
+.spisok li:hover:last-child {
+	background: linear-gradient(45deg, rgba(255, 255, 0, 1) 0%, rgba(128, 128, 0, 1) 50%, rgba(255, 255, 0, 1) 100%);
+}
+.spisok li {
+	margin: 0px 0px 20px 0px;
+	padding: 5px;
+}
+.spisok li::first-line {
+	color: red;
+}
+.spisok li::before {
+	content: "";
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url(/img/check.png) 0 0 no-repeat;
+}
+.spisok li:hover::before {
+	background: url(/img/krest.jpg) 0 0 no-repeat;
+}
+.spisok li:hover {
+	color: red;
+	background-color: green;
+}
+.spisok li:hover:nth-child(3) {
+	margin: 0px 0px 0px 50px;
+}
+.spisok_li:hover ~ .spisok_li_2 {
+	background-color: blue;
+	opacity: 0.5;
+}
+.spisok .link:visited {
+	color: green;
+}
+.boss_knopka {
+	max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto 100px;
+}
+.block {
+	width: 200px;
+	margin: 0px auto 15px;
+	border-radius: 15px;
+	background: linear-gradient(45deg, rgba(153, 218, 255, 1) 0%, rgba(18, 31, 128, 1) 62%, rgba(18, 31, 128, 1) 100%);
+	padding: 15px 0px;
+	text-align: center;
+}
+.block:last-child {
+	background: linear-gradient(
+		45deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 1) 25%,
+		rgba(0, 0, 0, 1) 70%,
+		rgba(255, 0, 0, 1) 76%,
+		rgba(255, 0, 0, 1) 100%
+	);
+}
+.block:nth-child(3) {
+	background: linear-gradient(45deg, rgba(255, 0, 0, 1) 0%, rgba(255, 255, 0, 1) 50%, rgba(255, 0, 0, 1) 100%);
+}
+.block:first-of-type {
+	background: linear-gradient(
+		45deg,
+		rgba(245, 59, 255, 1) 0%,
+		rgba(255, 255, 0, 1) 25%,
+		rgba(5, 193, 255, 1) 50%,
+		rgba(255, 255, 0, 1) 75%,
+		rgba(255, 0, 0, 1) 100%
+	);
+}
+.block:hover {
+	width: 300px;
+	padding: 20px 0px;
+	background: radial-gradient(
+		ellipse at center,
+		rgba(0, 128, 0, 1) 0%,
+		rgba(0, 128, 0, 1) 36%,
+		rgba(0, 88, 0, 1) 56%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+.boss_knopka a {
+	display: inline-block;
+	font-size: 20px;
+}
+.block a::first-letter {
+	color: red;
+	font-size: 25px;
+}
+.block:hover ~ .block {
+	margin: 20px 0px 20px 50px;
+}
+.boss_knopka p {
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+	border-radius: 50px;
+	padding: 15px 30px;
+	background-color: red;
+	margin: 0px auto 30px;
+	font-size: 24px;
+}
+.boss_knopka p:hover ~ .block {
+	visibility: hidden;
+}
