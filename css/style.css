@@ -30,7 +30,7 @@ img {
 	vertical-align: top;
 }
 body {
-	line-height: 1;
+	line-height: 1.1;
 	font-size: 20px;
 	background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(255, 0, 255, 1) 100%);
 	font-family: Reggae One;
@@ -66,10 +66,10 @@ body {
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background: url(/img/check.png) 0 0 no-repeat;
+	background: url(../img/check.png) 0 0 no-repeat;
 }
 .spisok li:hover::before {
-	background: url(/img/krest.jpg) 0 0 no-repeat;
+	background: url(../img/krest.jpg) 0 0 no-repeat;
 }
 .spisok li:hover {
 	color: red;
